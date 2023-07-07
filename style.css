@@ -7,6 +7,7 @@
     --saturation: 50%;
     --foreground-color: hsl(var(--hue), var(--saturation), 75%);
     --background-color: hsl(var(--hue), var(--saturation), 20%);
+  
   }
   
   body {
@@ -68,3 +69,43 @@
     text-align: right;
     border-right: .5vh solid var(--foreground-color);
   }
+
+  /* this for showing info about game */
+  
+  .show-info-about-game{
+   display: flex;
+   height: 170px;
+   width: 300px;
+   margin: 0 auto;
+   border-radius: 20px;
+   background-color: rgba(37, 37, 46, 0.4);
+   margin-top: 1rem;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+   
+  }
+  .show-info-about-game p{
+    padding: 3rem;
+    width: 250px;
+    height: 120px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    color: #7297ad;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .pause-game{
+   margin-top: 6em; 
+  }
+ @media screen and (max-height: 600px){
+  .pause-game{
+    margin-top: 4em;
+  }
+ }
+  
